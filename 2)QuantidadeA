@@ -1,0 +1,24 @@
+def contar_letra_a(string):
+    # Contar a quantidade de letra 'a' (minuscula e maiuscula)
+    quantidade_a = string.lower().count('a')
+    
+    # Verificar se a letra 'a' está presente
+    existe_a = quantidade_a > 0
+    
+    return existe_a, quantidade_a
+
+def main():
+    # Solicitar ao usuario que informe a string
+    string = input("Digite uma string: ")
+    
+    # Contar a ocorrencia da letra 'a'
+    existe_a, quantidade_a = contar_letra_a(string)
+    
+    # Informar se a letra 'a' existe e quantas vezes ocorre
+    if existe_a:
+        print(f"A letra 'a' ocorre {quantidade_a} vez(es) na string.")
+    else:
+        print("A letra 'a' não esta presente na string.")
+
+if __name__ == "__main__":
+    main()
